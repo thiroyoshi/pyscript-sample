@@ -5,7 +5,11 @@
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     </head>
     <body>
-        <py-script> print('Now you can!') </py-script>|
+        <py-script>
+            from datetime import datetime
+            now = datetime.now()
+            now.strftime("%m/%d/%Y, %H:%M:%S")
+        </py-script>|
         <py-repl></py-repl>
     </body>
 </html>
