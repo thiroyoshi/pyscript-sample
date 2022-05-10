@@ -1,15 +1,27 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>PyScript Sample</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
         <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     </head>
     <body>
+        <h2>Hello! PyScript!</h2>
+        <br>
+        <div>
+            This is the current date and time, as computed by Python:
         <py-script>
-            from datetime import datetime
-            now = datetime.now()
-            now.strftime("%m/%d/%Y, %H:%M:%S")
-        </py-script>|
-        <py-repl></py-repl>
+            print('Hello! PyScript!!')
+        </py-script>
+        </div>
+        <br>
+        <div>
+            You can write and execute Python Codes in below box.
+            <py-repl/>
+        </div>
     </body>
 </html>
